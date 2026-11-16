@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Galvenā lapa</title>
+
+<!-- ВИЗУАЛЬНОЕ ОФОРМЛЕНИЕ И ЦВЕТА (CSS) -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9; /* Светло-серый фон всей страницы */
+}
+
+/* Верхняя белая панель меню */
+.augsa {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 2px solid #005f73;
+}
+
+/* Раскрывающийся элемент меню */
+details {
+    display: inline-block;
+    cursor: pointer;
+}
+
+summary {
+    font-size: 16px;
+    font-weight: bold;
+    color: #005f73; /* Сине-зелёный текст меню */
+    list-style: none; /* Убирает стрелку */
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Синяя раскрывающаяся панель со ссылками */
+.apaksa-panelis {
+    position: absolute;
+    background-color: #005f73; /* Синий фон панели */
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Ссылки в синей панели */
+.apaksa-panelis a {
+    display: block;
+    color: #ffffff; /* Белый текст ссылок */
+    text-decoration: none;
+    padding: 6px 0;
+    font-size: 15px;
+}
+
+.apaksa-panelis a:hover {
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+
+/* Белый блок основного текста по центру */
+.saturs {
+    max-width: 650px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: #005f73; /* Сине-зелёный заголовок */
+    margin-top: 0;
+}
+
+p {
+    color: #333333; /* Тёмный текст для удобного чтения */
+    font-size: 16px;
+    line-height: 1.5;
+}
+</style>
+</head>
+<body>
+
+<!-- ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ СО ССЫЛКАМИ -->
+<div class="augsa">
+    <details>
+        <summary>PAR MANI</summary>
+        <div class="apaksa-panelis">
+            <a href="izglitiba.html">Mana izglītība</a>
+            <a href="hobiji.html">Mani hobiji</a>
+        </div>
+    </details>
+</div>
+
+<!-- ОСНОВНОЕ ПОЛЕ СОДЕРЖИМОГО -->
+<div class="saturs">
+    <h1>Sveicināti manā mājas lapā!</h1>
+    <!-- Пояснительный текст обязательно начинается с <p> и заканчивается </p> -->
+    <p>Prieks iepazīties.</p>
+</div>
+
+</body>
+</html>
