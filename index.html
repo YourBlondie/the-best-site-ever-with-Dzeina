@@ -2,7 +2,8 @@
 <html lang="lv">
 <head>
 <meta charset="UTF-8">
-<title>Mana izglītība</title>
+<title>Galvenā lapa</title>
+
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -10,29 +11,67 @@ body {
     padding: 0;
     background-color: #f4f6f9;
 }
+
 .augsa {
     background-color: #ffffff;
     padding: 15px 30px;
     border-bottom: 2px solid #005f73;
 }
-.augsa a {
-    color: #005f73;
-    text-decoration: none;
-    font-weight: bold;
+
+details {
+    display: inline-block;
+    cursor: pointer;
 }
+
+summary {
+    font-size: 16px;
+    font-weight: bold;
+    color: #005f73;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.apaksa-panelis {
+    position: absolute;
+    background-color: #005f73;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.apaksa-panelis a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 0;
+    font-size: 15px;
+}
+
+.apaksa-panelis a:hover {
+    text-decoration: underline;
+}
+
 .saturs {
     max-width: 650px;
     margin: 40px auto;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
 h1 {
     color: #005f73;
     margin-top: 0;
 }
-li {
-    margin-bottom: 10px;
+
+p {
+    color: #333333;
+    font-size: 16px;
     line-height: 1.5;
 }
 </style>
@@ -40,17 +79,18 @@ li {
 <body>
 
 <div class="augsa">
-    <a href="index.html">Atpakaļ uz galveno lapu</a>
+    <details>
+        <summary>PAR MANI</summary>
+        <div class="apaksa-panelis">
+            <a href="izglitiba.html">Mana izglītība</a>
+            <a href="hobiji.html">Mani hobiji</a>
+        </div>
+    </details>
 </div>
 
 <div class="saturs">
-    <h1>Mana izglītība</h1>
-    <p>Informācija par manām mācībām un prasmēm:</p>
-    <ul>
-        <li><strong>Skola / Ģimnāzija:</strong> Iegūta vispārējā vidējā izglītība</li>
-        <li><strong>Augstskola:</strong> Bakalaura vai maģistra studijas</li>
-        <li><strong>Kursi:</strong> Tīmekļa izstrādes un programmēšanas pamati</li>
-    </ul>
+    <h1>Sveicināti manā mājas lapā!</h1>
+    <p>Prieks iepazīties.</p>
 </div>
 
 </body>
