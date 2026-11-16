@@ -2,104 +2,55 @@
 <html lang="lv">
 <head>
 <meta charset="UTF-8">
-<title>Galvenā lapa</title>
-
-<!-- ВИЗУАЛЬНОЕ ОФОРМЛЕНИЕ И ЦВЕТА (CSS) -->
+<title>Mani hobiji</title>
 <style>
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f9; /* Светло-серый фон всей страницы */
+    background-color: #f4f6f9;
 }
-
-/* Верхняя белая панель меню */
 .augsa {
     background-color: #ffffff;
     padding: 15px 30px;
     border-bottom: 2px solid #005f73;
 }
-
-/* Раскрывающийся элемент меню */
-details {
-    display: inline-block;
-    cursor: pointer;
-}
-
-summary {
-    font-size: 16px;
-    font-weight: bold;
-    color: #005f73; /* Сине-зелёный текст меню */
-    list-style: none; /* Убирает стрелку */
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-/* Синяя раскрывающаяся панель со ссылками */
-.apaksa-panelis {
-    position: absolute;
-    background-color: #005f73; /* Синий фон панели */
-    padding: 12px 20px;
-    border-radius: 6px;
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-/* Ссылки в синей панели */
-.apaksa-panelis a {
-    display: block;
-    color: #ffffff; /* Белый текст ссылок */
+.augsa a {
+    color: #005f73;
     text-decoration: none;
-    padding: 6px 0;
-    font-size: 15px;
+    font-weight: bold;
 }
-
-.apaksa-panelis a:hover {
-    text-decoration: underline; /* Подчёркивание при наведении */
-}
-
-/* Белый блок основного текста по центру */
 .saturs {
     max-width: 650px;
     margin: 40px auto;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-
 h1 {
-    color: #005f73; /* Сине-зелёный заголовок */
+    color: #005f73;
     margin-top: 0;
 }
-
-p {
-    color: #333333; /* Тёмный текст для удобного чтения */
-    font-size: 16px;
+li {
+    margin-bottom: 10px;
     line-height: 1.5;
 }
 </style>
 </head>
 <body>
 
-<!-- ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ СО ССЫЛКАМИ -->
 <div class="augsa">
-    <details>
-        <summary>PAR MANI</summary>
-        <div class="apaksa-panelis">
-            <a href="izglitiba.html">Mana izglītība</a>
-            <a href="hobiji.html">Mani hobiji</a>
-        </div>
-    </details>
+    <a href="index.html">Atpakaļ uz galveno lapu</a>
 </div>
 
-<!-- ОСНОВНОЕ ПОЛЕ СОДЕРЖИМОГО -->
 <div class="saturs">
-    <h1>Sveicināti manā mājas lapā!</h1>
-    <!-- Пояснительный текст обязательно начинается с <p> и заканчивается </p> -->
-    <p>Prieks iepazīties.</p>
+    <h1>Mani hobiji</h1>
+    <p>Nodarbes un aizraušanās brīvajā laikā:</p>
+    <ul>
+        <li><strong>Sports un daba:</strong> Skriešana, riteņbraukšana vai pārgājieni dabā</li>
+        <li><strong>Radošums:</strong> Fotogrāfija, dizains vai mūzika</li>
+        <li><strong>Tehnoloģijas:</strong> Mājas lapu veidošana un datorzinības</li>
+    </ul>
 </div>
 
 </body>
